@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    producer: 
+        image: codehacker123/producer-service:latest
+        ports: 
+            - 5004:3232
+
+
+
+    consumer: 
+        image: codehacker123/consumer-service:latest
+        ports: 
+            - 5002:3000
